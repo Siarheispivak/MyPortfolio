@@ -1,0 +1,31 @@
+.aboutMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  .container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .innerContainer{
+      display: flex;
+      gap: 30px;
+      text-align: start;
+      justify-content: center;
+      .description{
+        max-width: 500px;
+      }
+      .personalInfo{
+
+        .personalInfoInner{
+
+          .info{
+
+          }
+        }
+      }
+    }
+  }
+}

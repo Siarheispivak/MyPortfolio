@@ -2,7 +2,22 @@
   height: 80px;
   background: #99d0fb;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .myName {
+  font-size: 32px;
+  font-weight: bold;
+}
+.header .container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
   justify-content: flex-end;
+}
+.header .socialNetworks {
+  display: flex;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=Header.module.css.map */

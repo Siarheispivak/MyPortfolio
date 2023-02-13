@@ -2,5 +2,20 @@
   height: 80px;
   background: #99d0fb;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
+  .myName{
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .socialNetworks{
+    display: flex;
+    gap: 20px;
+  }
 }

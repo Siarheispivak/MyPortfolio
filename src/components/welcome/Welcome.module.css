@@ -1,0 +1,15 @@
+.welcomeSection {
+  height: 100vh;
+  background: #ffd4f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcomeSection .container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=Welcome.module.css.map */

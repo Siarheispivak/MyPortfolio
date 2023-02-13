@@ -1,0 +1,18 @@
+.whatIDo {
+  height: 80vh;
+  background-color: #343a40;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.whatIDo .container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=WhatIDo.module.css.map */

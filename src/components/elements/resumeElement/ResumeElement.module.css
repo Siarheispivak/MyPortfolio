@@ -1,0 +1,30 @@
+.resumeElement {
+  background-color: #111418;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  border-radius: 5px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resumeElement .years {
+  color: white;
+  background: #20c997;
+  border-radius: 5px;
+  padding: 4px 10px;
+  max-width: 100px;
+  width: 100%;
+}
+.resumeElement .title {
+  color: white;
+}
+.resumeElement .company {
+  color: #20c997;
+}
+.resumeElement .description {
+  color: hsla(0deg, 0%, 100%, 0.5);
+}
+
+/*# sourceMappingURL=ResumeElement.module.css.map */

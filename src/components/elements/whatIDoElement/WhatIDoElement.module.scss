@@ -1,0 +1,37 @@
+.WhatIDoElement{
+  padding: 4px;
+  max-width: 500px;
+  width: 100%;
+  background: cornflowerblue;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  .imageContainer{
+
+    .palette:before {
+      content: "";
+    }
+    .image{
+      background-color: #212529;
+      border-radius: 5px;
+      align-items: center;
+      display: flex;
+      flex-shrink: 0;
+      height: 70px;
+      width: 70px;
+
+      .palette{
+        color: #20c997
+      }
+    }
+  }
+  .description{
+
+    .title{
+
+    }
+    .about{
+
+    }
+  }
+}

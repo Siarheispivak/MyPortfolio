@@ -1,0 +1,26 @@
+.WhatIDoElement {
+  padding: 4px;
+  max-width: 500px;
+  width: 100%;
+  background: cornflowerblue;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.WhatIDoElement .imageContainer .palette:before {
+  content: "";
+}
+.WhatIDoElement .imageContainer .image {
+  background-color: #212529;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  height: 70px;
+  width: 70px;
+}
+.WhatIDoElement .imageContainer .image .palette {
+  color: #20c997;
+}
+
+/*# sourceMappingURL=WhatIDoElement.module.css.map */
