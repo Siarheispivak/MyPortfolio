@@ -1,0 +1,15 @@
+.nav {
+  border: 1px solid red;
+  max-width: 350px;
+}
+.nav .menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+.nav .menu .item a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=Nav.module.css.map */
