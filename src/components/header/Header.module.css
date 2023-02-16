@@ -1,6 +1,6 @@
 .header {
   height: 80px;
-  background: #99d0fb;
+  background-color: #111;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,16 +8,18 @@
 .header .myName {
   font-size: 32px;
   font-weight: bold;
+  color: white;
 }
 .header .container {
   max-width: 1200px;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .header .socialNetworks {
   display: flex;
   gap: 20px;
+  color: white;
 }
 
 /*# sourceMappingURL=Header.module.css.map */

@@ -1,13 +1,13 @@
 .nav {
-  border: 1px solid red;
-  max-width: 300px;
+  max-width: 600px;
+  width: 100%;
   max-height: 20px;
 }
 .nav .menu {
   display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
-  gap: 20px;
 }
 .nav .menu .item a {
   text-decoration: none;

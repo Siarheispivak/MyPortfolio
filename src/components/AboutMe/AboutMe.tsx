@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './AboutMe.module.css'
-import {Button} from "../button/Button";
+import {Button} from "../elements/button/Button";
 export const AboutMe = () => {
     return (
         <div className={style.aboutMe}>

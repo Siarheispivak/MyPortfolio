@@ -2,7 +2,7 @@ import React from 'react';
 import {ResumeElement} from "../elements/resumeElement/ResumeElement";
 import style from './Resume.module.css'
 import {Skills} from '../elements/skills/Skills';
-import {Button} from "../button/Button";
+import {Button} from "../elements/button/Button";
 
 export const Resume = () => {
     return (

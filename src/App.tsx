@@ -7,6 +7,7 @@ import {WhatIDo} from "./components/whatIDo/WhatIDo";
 import {Resume} from "./components/resume/Resume";
 import {MyWork} from "./components/myWork/MyWork";
 import {PersonalInfo} from "./components/personalInfo/personalInfo";
+import {Footer} from "./components/footer/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Resume/>
             <MyWork/>
             <PersonalInfo/>
+            <Footer/>
         </div>
     );
 }

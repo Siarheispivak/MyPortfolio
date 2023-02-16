@@ -1,21 +1,23 @@
 .header {
   height: 80px;
-  background: #99d0fb;
+  background-color: #111;
   display: flex;
   justify-content: space-around;
   align-items: center;
   .myName{
     font-size: 32px;
     font-weight: bold;
+    color: white;
   }
   .container{
     max-width: 1200px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
   .socialNetworks{
     display: flex;
     gap: 20px;
+    color: white;
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './PersonalInfo.module.css'
-import {Button} from "../button/Button";
+import {Button} from "../elements/button/Button";
 export const PersonalInfo = () => {
     return (
         <div className={style.personalInfo}>
@@ -22,10 +22,10 @@ export const PersonalInfo = () => {
                     <div className={style.followMe}>
                         <h2 className={style.followTitle}>FOLLOW ME</h2>
                         <div className={style.networks}>
-                            <span className={'github'}></span>
-                            <span className={'google'}></span>
-                            <span className={'linkedIn'}></span>
-                            <span className={'VK'}></span>
+                            <span className={style.github}></span>
+                            <span className={style.google}></span>
+                            <span className={style.linkedIn}></span>
+                            <span className={style.VK}></span>
                         </div>
                     </div>
                 </div>
@@ -33,15 +33,13 @@ export const PersonalInfo = () => {
 
                 <div className={style.note}>
                     <h2 className={style.noteTitle}>SEND US A NOTE</h2>
-                    <div className={style.gridContainer}>
-                        <div className={style.name}>Name</div>
-                        <div className={style.email}>email</div>
-                        <div className={style.description}>description</div>
-                    </div>
+                    <form className={style.gridContainer}>
+                        <input type="text" className={`${style.name} ${style.gridInner}`}/>
+                        <input type="email" className={`${style.email} ${style.gridInner}`}/>
+                        <input type="text" className={`${style.description} ${style.gridInner}`}/>
+                    </form>
                     <Button title={'Send Message'} callBack={()=>{}}/>
                 </div>
-
-
             </div>
         </div>
     );
