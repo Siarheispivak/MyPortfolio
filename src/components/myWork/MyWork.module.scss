@@ -1,0 +1,79 @@
+.myWork {
+  background-color: #343a40;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title{
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: #fff;
+  }
+  .navigation {
+    max-width: 400px;
+    width: 100%;
+
+    .filter {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      color: white;
+      padding: 0;
+    }
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    height: inherit;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 300px 200px 200px 200px;
+    grid-template-areas: "a b c" "d b e" "d f g" ". f .";
+    grid-gap: 30px;
+
+    .box{
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box1 {
+      background: #ffcd00;
+      grid-area: a;
+
+    }
+
+    .box2 {
+       background: #00e100;
+      grid-area: b;
+    }
+
+    .box3 {
+       background: #0238ff;
+      grid-area:c;
+    }
+
+    .box4 {
+       background: #ff0000;
+      grid-area:d;
+    }
+
+    .box5 {
+       background: #a625b0;
+      grid-area: e;
+    }
+
+    .box6 {
+       background: rgb(0, 119, 255);
+      grid-area: f;
+    }
+
+    .box7 {
+       background: #e0b0b0;
+      grid-area: g;
+    }
+  }
+
+}

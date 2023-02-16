@@ -1,0 +1,70 @@
+.myWork {
+  background-color: #343a40;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.myWork .title {
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: #fff;
+}
+.myWork .navigation {
+  max-width: 400px;
+  width: 100%;
+}
+.myWork .navigation .filter {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  color: white;
+  padding: 0;
+}
+.myWork .container {
+  max-width: 1200px;
+  width: 100%;
+  height: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 200px 200px 200px;
+  grid-template-areas: "a b c" "d b e" "d f g" ". f .";
+  grid-gap: 30px;
+}
+.myWork .container .box {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myWork .container .box1 {
+  background: #ffcd00;
+  grid-area: a;
+}
+.myWork .container .box2 {
+  background: #00e100;
+  grid-area: b;
+}
+.myWork .container .box3 {
+  background: #0238ff;
+  grid-area: c;
+}
+.myWork .container .box4 {
+  background: #ff0000;
+  grid-area: d;
+}
+.myWork .container .box5 {
+  background: #a625b0;
+  grid-area: e;
+}
+.myWork .container .box6 {
+  background: rgb(0, 119, 255);
+  grid-area: f;
+}
+.myWork .container .box7 {
+  background: #e0b0b0;
+  grid-area: g;
+}
+
+/*# sourceMappingURL=MyWork.module.css.map */

@@ -1,0 +1,17 @@
+.personalInfo {
+  height: 100vh;
+  background-color: #212529;
+}
+.personalInfo .title {
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: #fff;
+}
+.personalInfo .container {
+  max-width: 1200px;
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+
+/*# sourceMappingURL=PersonalInfo.module.css.map */

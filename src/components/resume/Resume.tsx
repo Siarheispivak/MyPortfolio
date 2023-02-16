@@ -1,7 +1,9 @@
 import React from 'react';
 import {ResumeElement} from "../elements/resumeElement/ResumeElement";
 import style from './Resume.module.css'
-import {Skills} from "../../skills/Skills";
+import {Skills} from '../elements/skills/Skills';
+import {Button} from "../button/Button";
+
 export const Resume = () => {
     return (
         <div className={style.resume}>
@@ -24,15 +26,14 @@ export const Resume = () => {
 
                 <div className={style.skillBox1}>
                     <Skills/>
-
-
                 </div>
                 <div className={style.skillBox2}>
                     <Skills/>
-
-
                 </div>
 
+            </div>
+            <div className={style.container}>
+                <Button title={'Download CV'} callBack={()=>{}}/>
             </div>
 
         </div>
