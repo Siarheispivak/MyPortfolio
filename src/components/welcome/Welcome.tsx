@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './Welcome.module.css'
 import {Button} from "../elements/button/Button";
 
@@ -10,12 +10,11 @@ export const Welcome = () => {
             <div className={style.container}>
                 <div className={style.mainInfo}>
 
-                    <div className={style.typewriter}>
-                        <span>Welcome</span>
-                        <h1>I'm Siarhei Spivak.</h1>
-                        <span>Based in Belarus,Minsk.</span>
+                    <div className={style.info}>
+                        <span className={style.greeting}>Welcome</span>
+                        <div className={style.text}>I'm Siarhei Spivak.</div>
+                        <span className={style.address}>Based in Belarus,Minsk.</span>
                     </div>
-
                     <Button callBack={()=>{
                         console.log('hire Me')}} title={'Hire Me'}/>
                 </div>
@@ -23,6 +22,17 @@ export const Welcome = () => {
         </div>
     );
 };
+
+
+
+
+//
+// <div className={style.typewriter}>
+//     <span>Welcome</span>
+//     <h1>I'm Siarhei Spivak.</h1>
+//     <span>Based in Belarus,Minsk.</span>
+// </div>
+//
 
 // export const BackgroundVideo = () => {
 //     // const videoSource = 'http://www.w3schools.com/tags/movie.mp4';

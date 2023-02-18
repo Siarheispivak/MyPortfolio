@@ -1,17 +1,25 @@
-.skills .title {
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+.skill .skillInfo {
+  display: flex;
+  justify-content: space-between;
   color: white;
 }
-
+.skill .skillInfo .title {
+  font-size: 1.3rem;
+}
 progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
   appearance: none;
-  width: 500px;
+  width: 100%;
   height: 8px;
 }
 
 progress[value]::-webkit-progress-bar {
-  background-color: #eee;
+  background-color: #000000;
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }

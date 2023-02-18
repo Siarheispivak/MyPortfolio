@@ -1,17 +1,21 @@
-.WhatIDoElement{
+$container-width: 1200px;
+.WhatIDoElement {
   padding: 4px;
-  max-width: 500px;
+  max-width: calc($container-width / 2 - 50px);
   width: 100%;
-  background: cornflowerblue;
+  background-color: #343a40;
   display: flex;
   align-items: center;
   gap: 20px;
-  .imageContainer{
+  border-radius: 5px;
+
+  .imageContainer {
 
     .palette:before {
       content: "";
     }
-    .image{
+
+    .image {
       background-color: #212529;
       border-radius: 5px;
       align-items: center;
@@ -20,18 +24,22 @@
       height: 70px;
       width: 70px;
 
-      .palette{
+      .palette {
         color: #20c997
       }
     }
   }
-  .description{
 
-    .title{
-
+  .description {
+    width: 80%;
+    .title {
+      color: white;
+      font-size: 1.5rem;
     }
-    .about{
 
+    .about {
+      color: hsla(0, 0%, 100%, .5);
+      font-size: 1rem;
     }
   }
 }

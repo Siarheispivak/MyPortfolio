@@ -2,25 +2,72 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: fit-content;
   padding: 4.5rem 0;
   background-color: #212529;
 }
 .aboutMe .container {
+  position: relative;
   max-width: 1200px;
   width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: white;
+  gap: 30px;
+}
+.aboutMe .container h2 {
+  font-size: 2.25rem;
+  margin: 20px 0 20px 0;
+  z-index: 2;
+  letter-spacing: 1rem;
+}
+.aboutMe .container .absolute {
+  position: absolute;
+  top: -10%;
+  left: calc(50% - 342.8571428571px);
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 0;
 }
 .aboutMe .container .innerContainer {
   display: flex;
   gap: 30px;
   text-align: start;
   justify-content: center;
+  color: hsla(0deg, 0%, 100%, 0.5);
 }
 .aboutMe .container .innerContainer .description {
-  max-width: 500px;
+  max-width: 800px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.aboutMe .container .innerContainer .description h3 {
+  font-size: 1.75rem;
+}
+.aboutMe .container .innerContainer .personalInfo {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutMe .container .innerContainer .personalInfo .personalInfoInner .ul {
+  width: 300px;
+  color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutMe .container .innerContainer .personalInfo .personalInfoInner .ul li {
+  width: 100%;
+}
+
+.marker {
+  color: #20c997;
 }
 
 /*# sourceMappingURL=AboutMe.module.css.map */

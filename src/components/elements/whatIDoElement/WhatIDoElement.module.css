@@ -1,11 +1,12 @@
 .WhatIDoElement {
   padding: 4px;
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
-  background: cornflowerblue;
+  background-color: #343a40;
   display: flex;
   align-items: center;
   gap: 20px;
+  border-radius: 5px;
 }
 .WhatIDoElement .imageContainer .palette:before {
   content: "";
@@ -21,6 +22,17 @@
 }
 .WhatIDoElement .imageContainer .image .palette {
   color: #20c997;
+}
+.WhatIDoElement .description {
+  width: 80%;
+}
+.WhatIDoElement .description .title {
+  color: white;
+  font-size: 1.5rem;
+}
+.WhatIDoElement .description .about {
+  color: hsla(0deg, 0%, 100%, 0.5);
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=WhatIDoElement.module.css.map */

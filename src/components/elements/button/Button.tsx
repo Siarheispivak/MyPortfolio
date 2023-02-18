@@ -1,4 +1,6 @@
 import React from 'react';
+import style from './Button.module.css'
+
 type ButtonType = {
     title:string
     callBack:()=>void
@@ -9,8 +11,8 @@ export const Button = (props:ButtonType) => {
         props.callBack()
     }
     return (
-        <div>
-            <button onClick={onClickHandler}>{props.title}</button>
+        <div className={style.buttonContainer}>
+            <button className={style.button} onClick={onClickHandler}>{props.title}</button>
         </div>
     );
 };

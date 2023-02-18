@@ -1,11 +1,27 @@
 .whatIDo {
-  height: 80vh;
+  position: relative;
+  height: fit-content;
   background-color: #343a40;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  gap: 80px;
   padding: 4.5rem 0;
+}
+.whatIDo h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: white;
+  letter-spacing: 1rem;
+}
+.whatIDo .absolute {
+  position: absolute;
+  top: 6%;
+  left: calc(50% - 342.8571428571px);
+  font-size: 8rem;
+  color: rgba(239, 236, 236, 0.15);
+  z-index: 0;
 }
 .whatIDo .container {
   max-width: 1200px;

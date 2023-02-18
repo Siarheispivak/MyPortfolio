@@ -1,33 +1,84 @@
-.aboutMe{
+$container-width: 1200px;
+.aboutMe {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: fit-content;
   padding: 4.5rem 0;
   background-color: #212529;
-  .container{
-    max-width: 1200px;
+
+  .container {
+    position: relative;
+    max-width: $container-width;
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    .innerContainer{
+    color: white;
+    gap: 30px;
+
+    h2 {
+      font-size: 2.25rem;
+      margin: 20px 0 20px 0;
+      z-index: 2;
+      letter-spacing: 1rem;
+    }
+
+    .absolute {
+      position: absolute;
+      top: -10%;
+      left: calc(50% - ($container-width / 3.5));
+      font-size: 8rem;
+      color: rgba(255, 255, 255, 0.05);
+      z-index: 0;
+    }
+
+    .innerContainer {
       display: flex;
       gap: 30px;
       text-align: start;
       justify-content: center;
-      .description{
-        max-width: 500px;
+      color: hsla(0, 0%, 100%, .5);
+
+      .description {
+        max-width: 800px;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h3 {
+          font-size: 1.75rem;
+        }
       }
-      .personalInfo{
 
-        .personalInfoInner{
+      .personalInfo {
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-          .info{
+        .personalInfoInner {
 
+          .ul {
+            width: 300px;
+            color: white;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li {
+              width: 100%;
+            }
           }
         }
       }
     }
   }
+}
+
+.marker {
+  color: #20c997;
 }

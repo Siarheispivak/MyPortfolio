@@ -1,0 +1,18 @@
+.buttonContainer{
+
+  .button{
+    border-color: #20c997;
+    color: #20c997;
+    border-width: 2px;
+    font-weight: 500;
+    padding: 0.8rem 2.6rem;
+    transition: all .5s ease;
+    border-radius: 30px;
+    background: transparent;
+    box-shadow: none;
+    &:hover{
+      background: #20c997;
+      color: white;
+    }
+  }
+}
