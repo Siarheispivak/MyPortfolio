@@ -2,9 +2,14 @@ import React from 'react';
 import style from './Header.module.css'
 import {Nav} from "../elements/nav/Nav";
 
-export const Header = () => {
+type HeaderType = {
+    inView:boolean
+}
+
+export const Header = (props:HeaderType) => {
+    console.log(props.inView)
     return (
-        <div className={style.header}>
+        <div  className={`${style.header} ${props.inView ? '' : style.headerBg}`}>
             <span className={style.myName}>Siarhei</span>
             <div className={style.container}>
                 <Nav/>

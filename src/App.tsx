@@ -8,12 +8,28 @@ import {Resume} from "./components/resume/Resume";
 import {MyWork} from "./components/myWork/MyWork";
 import {PersonalInfo} from "./components/personalInfo/personalInfo";
 import {Footer} from "./components/footer/Footer";
+import {useInView} from "react-intersection-observer";
 
 
 function App() {
+    const { ref:headerRef, inView:myElementIsVisible} = useInView({
+        /* Optional options */
+        initialInView:false,
+    });
+    console.log(myElementIsVisible)
     return (
         <div className="App">
-            <Header/>
+            <div ref={headerRef} className={''}>
+                <Header inView={myElementIsVisible}/>
+            </div>
+            {!myElementIsVisible
+            ?  <div className={`${!myElementIsVisible ? 'sticky' : ''}`}>
+                    <Header inView={myElementIsVisible}/>
+                </div>
+                : ''
+            }
+
+
             <Welcome/>
             <AboutMe/>
             <WhatIDo/>
