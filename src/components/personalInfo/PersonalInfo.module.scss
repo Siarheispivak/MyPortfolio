@@ -6,7 +6,7 @@
   align-items: center;
   //justify-content: center;
   padding: 4.5rem 0;
-  gap: 30px;
+  gap: 60px;
 
   .title {
     font-weight: 600;
@@ -44,6 +44,25 @@
       }
 
       .followMe {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .followTitle{
+
+        }
+        .networks{
+          display: flex;
+          align-items: center;
+          gap:20px;
+          .pic{
+            max-width: 30px;
+
+            &:hover{
+              scale: 1.2;
+              transition: 0.5s;
+            }
+          }
+        }
 
       }
     }
@@ -51,6 +70,7 @@
     .note{
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 20px;
       .noteTitle{
         font-size: 1.3125rem;

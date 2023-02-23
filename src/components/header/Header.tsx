@@ -15,9 +15,10 @@ export const Header = (props:HeaderType) => {
                 <Nav/>
             </div>
             <div className={style.socialNetworks}>
-                <span>linkedIn</span>
-                <span>GitHub</span>
-                <span>else</span>
+                    <span className={style.link}><a href="https://github.com/Siarheispivak"></a></span>
+                    <span className={style.link}><a href="https://www.linkedin.com/in/siarhei-spivak-810b221b1/"></a></span>
+                    <span className={style.link}><a href="Siarheispivak@gmail.com"></a></span>
+                    <span className={style.link}><a href="Siarheispivak@gmail.com"></a></span>
             </div>
         </div>
     );

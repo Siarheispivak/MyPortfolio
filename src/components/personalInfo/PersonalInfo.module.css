@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   padding: 4.5rem 0;
-  gap: 30px;
+  gap: 60px;
 }
 .personalInfo .title {
   font-weight: 600;
@@ -39,9 +39,27 @@
   display: flex;
   flex-direction: column;
 }
+.personalInfo .container .info .followMe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.personalInfo .container .info .followMe .networks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.personalInfo .container .info .followMe .networks .pic {
+  max-width: 30px;
+}
+.personalInfo .container .info .followMe .networks .pic:hover {
+  scale: 1.2;
+  transition: 0.5s;
+}
 .personalInfo .container .note {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 .personalInfo .container .note .noteTitle {

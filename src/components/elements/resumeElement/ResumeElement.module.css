@@ -2,8 +2,7 @@
   background-color: #111418;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  max-width: 624px;
-  width: 100%;
+  width: 624px;
   border-radius: 5px;
   text-align: start;
   display: flex;
@@ -15,8 +14,10 @@
   background: #20c997;
   border-radius: 5px;
   padding: 4px 10px;
-  max-width: 100px;
+  max-width: 180px;
   width: 100%;
+  text-align: center;
+  align-self: flex-end;
 }
 .resumeElement .title {
   color: white;

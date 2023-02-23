@@ -4,14 +4,7 @@ export const MyWork = () => {
     return (
         <div className={style.myWork}>
             <h2 className={style.title}>My Work</h2>
-            <nav className={style.navigation}>
-                <ul className={style.filter}>
-                    <li>All</li>
-                    <li>Development</li>
-                    <li>Design</li>
-                    <li>Else</li>
-                </ul>
-            </nav>
+
             <div className={style.container}>
                 <div className={`${style.box1} ${style.box}`}>1</div>
                 <div className={`${style.box2} ${style.box}`}>2</div>

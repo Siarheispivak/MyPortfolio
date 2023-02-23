@@ -20,16 +20,14 @@ export const AboutMe = () => {
                         <div className={style.personalInfoInner}>
                             <ul className={style.ul}>
                                 <li><span>Name: </span>Siarhei Spivak<hr className={style.hr}/></li>
-                                <li><span>Email: </span><a href='#' className={style.marker}>Siarheispivak@gmail.com</a><hr className={style.hr}/></li>
+                                <li><span>Email: </span><a href="mailto:Siarheispivak@gmail.ru" className={style.marker}>Siarheispivak@gmail.ru</a><hr className={style.hr}/></li>
                                 <li><span>Age: </span>29<hr className={style.hr}/></li>
-                                <li><span>From: </span>Republic of Belarus,Minsk<hr className={style.hr}/></li>
+                                <li><span>From: </span><a href='http://surl.li/faivs' target="_blank">Belarus, Minsk</a><hr className={style.hr}/></li>
                             </ul>
                         </div>
                         <Button title={'Download CV'} callBack={()=>{}}/>
                     </div>
-
                 </div>
-
             </div>
         </div>
     );
