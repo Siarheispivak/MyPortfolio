@@ -51,7 +51,7 @@ export const Resume = () => {
 
             </div>
             <div className={style.container}>
-                <Button title={'Download CV'} callBack={()=>{}}/>
+                <Button title={'Download CV'} callBack={()=>{}} style={'grayButton'}/>
             </div>
 
         </div>

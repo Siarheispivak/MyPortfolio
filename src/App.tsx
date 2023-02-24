@@ -16,7 +16,7 @@ function App() {
         /* Optional options */
         initialInView:false,
     });
-    console.log(myElementIsVisible)
+
     return (
         <div className="App">
             <div ref={headerRef} className={''}>
@@ -28,13 +28,13 @@ function App() {
                 </div>
                 : ''
             }
-            <Welcome/>
-            <AboutMe/>
-            <WhatIDo/>
-            <Resume/>
-            <MyWork/>
-            <PersonalInfo/>
-            <Footer/>
+            {/*<Welcome/>*/}
+            {/*<AboutMe/>*/}
+            {/*<WhatIDo/>*/}
+            {/*<Resume/>*/}
+            {/*<MyWork/>*/}
+            {/*<PersonalInfo/>*/}
+            {/*<Footer/>*/}
         </div>
     );
 }

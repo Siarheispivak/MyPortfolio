@@ -20,7 +20,8 @@
   justify-content: space-between;
 }
 .personalInfo .container .info {
-  max-width: 330px;
+  max-width: 230px;
+  width: 100%;
   padding: 0px 12px;
   color: #dee3e4;
   display: flex;
@@ -35,9 +36,55 @@
 .personalInfo .container .info .contacts .address {
   font-size: 1.3125rem;
 }
+.personalInfo .container .info .contacts .city {
+  position: relative;
+  text-align: end;
+}
+.personalInfo .container .info .contacts .city:before {
+  content: "";
+  background-image: url("../../assets/location.png");
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  background-size: cover;
+  left: 15px;
+  top: -8px;
+  cursor: pointer;
+}
 .personalInfo .container .info .phoneAndEmail {
   display: flex;
   flex-direction: column;
+  gap: 40px;
+}
+.personalInfo .container .info .phoneAndEmail .phone {
+  position: relative;
+  text-align: end;
+}
+.personalInfo .container .info .phoneAndEmail .phone:before {
+  content: "";
+  background-image: url("../../assets/chats.png");
+  width: 50px;
+  height: 35px;
+  position: absolute;
+  background-size: cover;
+  left: 0px;
+  top: -12px;
+  cursor: pointer;
+}
+.personalInfo .container .info .phoneAndEmail .email {
+  position: relative;
+  text-align: end;
+}
+.personalInfo .container .info .phoneAndEmail .email:before {
+  content: "";
+  background-image: url("../../assets/email.png");
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-size: cover;
+  left: 10px;
+  top: -5px;
+  cursor: pointer;
 }
 .personalInfo .container .info .followMe {
   display: flex;

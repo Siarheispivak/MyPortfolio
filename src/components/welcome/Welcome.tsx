@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import style from './Welcome.module.css'
 import {Button} from "../elements/button/Button";
 import {useTypewriter,Cursor} from "react-simple-typewriter";

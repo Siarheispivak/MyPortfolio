@@ -2,8 +2,20 @@
   height: 80px;
   background: black;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+@media (max-width: 1200px) {
+  .header {
+    padding-left: calc(10px + 80 * ((100vw - 1001px) / 199));
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    padding-right: calc(10px + 80 * ((100vw - 1001px) / 199));
+  }
 }
 .header .myName {
   font-size: 32px;
@@ -16,10 +28,19 @@
   display: flex;
   justify-content: center;
 }
-.header .socialNetworks {
+.header .networks {
+  min-width: 130px;
   display: flex;
+  align-items: center;
   gap: 20px;
-  color: white;
+}
+.header .networks .pic {
+  max-width: 30px;
+  width: 100%;
+}
+.header .networks .pic:hover {
+  scale: 1.2;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=Header.module.css.map */

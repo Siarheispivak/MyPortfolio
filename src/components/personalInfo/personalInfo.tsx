@@ -10,12 +10,23 @@ export const PersonalInfo = () => {
                 <div className={style.info}>
                     <div className={style.contacts}>
                         <h2 className={style.address}>ADDRESS</h2>
-                        <p><a href='http://surl.li/faivs' target="_blank">Belarus, Minsk</a></p>
+                        <span className={style.city}>
+                            <a href='http://surl.li/faivs' target="_blank">Belarus, Minsk</a>
+                            <hr/>
+                        </span>
+
                     </div>
 
                     <div className={style.phoneAndEmail}>
-                        <span className={style.phone}><a href="tel:+375295648538">+375295648538</a></span>
-                        <span className={style.email}><a href="mailto:Siarheispivak@gmail.ru">siarheispivak@gmail.ru</a></span>
+                        <span className={style.phone}>
+                            <a href="tel:+375295648538">+375295648538</a>
+                            <hr/>
+                        </span>
+                        <span className={style.email}>
+                            <a href="mailto:Siarheispivak@gmail.ru">siarheispivak@gmail.ru</a>
+                             <hr/>
+                        </span>
+
                     </div>
 
                     <div className={style.followMe}>
@@ -36,7 +47,7 @@ export const PersonalInfo = () => {
                         <input type="email" className={`${style.email} ${style.gridInner}`}/>
                         <input type="text" className={`${style.description} ${style.gridInner}`}/>
                     </form>
-                    <Button title={'Send Message'} callBack={()=>{}}/>
+                    <Button title={'Send Message'} callBack={()=>{}} style={'fullButton'}/>
                 </div>
             </div>
         </div>

@@ -8,16 +8,7 @@ $container-width: 1200px;
   align-items: center;
   gap: 20px;
   border-radius: 5px;
-  &:hover{
-    transform: scale(1.1);
-    border-radius: 15px;
-    box-shadow: 0px 2px 35px 14px rgba(192, 7, 7, 0.04);
-    transition: 0.5s;
-    filter: brightness(0.7);
-    z-index: 1;
-    cursor: pointer;
-    background: #20c997;
-  }
+
 
   .imageContainer {
 

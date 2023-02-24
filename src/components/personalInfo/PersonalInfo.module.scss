@@ -22,7 +22,8 @@
     justify-content: space-between;
 
     .info {
-      max-width: 330px;
+      max-width: 230px;
+      width: 100%;
       padding: 0px 12px;
       color: #dee3e4;
       display: flex;
@@ -36,11 +37,57 @@
         .address {
           font-size: 1.3125rem;
         }
+        .city{
+          position: relative;
+          text-align: end;
+          &:before{
+            content: '';
+            background-image: url('../../assets/location.png');
+            width: 20px;
+            height: 30px;
+            position: absolute;
+            background-size: cover;
+            left: 15px;
+            top: -8px;
+            cursor: pointer;
+          }
+        }
       }
 
       .phoneAndEmail {
         display: flex;
         flex-direction: column;
+        gap: 40px;
+        .phone{
+          position: relative;
+          text-align: end;
+          &:before{
+            content: '';
+            background-image: url('../../assets/chats.png');
+            width: 50px;
+            height: 35px;
+            position: absolute;
+            background-size: cover;
+            left: 0px;
+            top: -12px;
+            cursor: pointer;
+          }
+        }
+        .email{
+          position: relative;
+          text-align: end;
+          &:before{
+            content: '';
+            background-image: url('../../assets/email.png');
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-size: cover;
+            left: 10px;
+            top: -5px;
+            cursor: pointer;
+          }
+        }
       }
 
       .followMe {

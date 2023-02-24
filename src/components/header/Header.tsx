@@ -7,18 +7,17 @@ type HeaderType = {
 }
 
 export const Header = (props:HeaderType) => {
-    console.log(props.inView)
+
     return (
         <div  className={`${style.header} ${props.inView ? '' : style.headerBg}`}>
             <span className={style.myName}>Siarhei</span>
             <div className={style.container}>
                 <Nav/>
             </div>
-            <div className={style.socialNetworks}>
-                    <span className={style.link}><a href="https://github.com/Siarheispivak"></a></span>
-                    <span className={style.link}><a href="https://www.linkedin.com/in/siarhei-spivak-810b221b1/"></a></span>
-                    <span className={style.link}><a href="Siarheispivak@gmail.com"></a></span>
-                    <span className={style.link}><a href="Siarheispivak@gmail.com"></a></span>
+            <div className={style.networks}>
+                <span className={style.pic}><a href="http://surl.li/fapco" target="_blank"><img src="http://surl.li/faspi"></img></a></span>
+                <span className={style.pic}><a href="http://surl.li/fapga" target="_blank"><img src="http://surl.li/fasoz"></img></a></span>
+                <span className={style.pic}><a href="http://surl.li/faphc" target="_blank"><img src="http://surl.li/faspd"></img></a></span>
             </div>
         </div>
     );
