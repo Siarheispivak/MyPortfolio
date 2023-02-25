@@ -4,18 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 90px;
-  padding-right: 90px;
-}
-@media (max-width: 1200px) {
-  .header {
-    padding-left: calc(10px + 80 * ((100vw - 1001px) / 199));
-  }
-}
-@media (max-width: 1200px) {
-  .header {
-    padding-right: calc(10px + 80 * ((100vw - 1001px) / 199));
-  }
+  padding: 0 90px;
+  padding-left: calc(10px + 80 * ((100vw - 320px) / 1600));
+  padding-right: calc(10px + 80 * ((100vw - 320px) / 1600));
 }
 .header .myName {
   font-size: 32px;
@@ -27,6 +18,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  max-width: calc(400px + 800 * ((100vw - 320px) / 1600));
 }
 .header .networks {
   min-width: 130px;

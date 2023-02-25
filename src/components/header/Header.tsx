@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Header.module.css'
 import {Nav} from "../elements/nav/Nav";
+import {Burger} from "../elements/burger/Burger";
 
 type HeaderType = {
     inView:boolean
@@ -13,6 +14,7 @@ export const Header = (props:HeaderType) => {
             <span className={style.myName}>Siarhei</span>
             <div className={style.container}>
                 <Nav/>
+                <Burger/>
             </div>
             <div className={style.networks}>
                 <span className={style.pic}><a href="http://surl.li/fapco" target="_blank"><img src="http://surl.li/faspi"></img></a></span>

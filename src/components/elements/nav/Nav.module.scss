@@ -1,7 +1,13 @@
+@import '../../../base/mixins.module';
+@import '../../../base/madiaquery.module';
 .nav {
   max-width: 600px;
   width: 100%;
   max-height: 20px;
+  @include adaptiv-value('max-width',600,300,3);
+  @include small-desktop{
+  display: none;
+  }
   .menu {
     display: flex;
     justify-content: space-around;

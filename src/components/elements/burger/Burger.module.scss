@@ -1,0 +1,55 @@
+@import '../../../base/mixins.module';
+@import '../../../base/madiaquery.module';
+
+.burgerMenu{
+  display: none;
+  @include small-desktop{
+  display: flex;
+  }
+  .menuSpan{
+    color: #20c997;
+    font-size: 30px;
+  }
+  .disappear{
+    opacity: 0;
+    transition: all 1s ease-in;
+  }
+  .appear{
+    opacity: 1;
+    transition: all 1s ease-in;
+  }
+  .nav {
+    max-height: 20px;
+    @include adaptiv-value('max-width',600,300,3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #ff0000;
+    z-index: 3;
+    display: flex;
+
+    transition: all 1s ease-in;
+    justify-content: center;
+    .active{
+      transform: translate(0,0);
+      transition: all 1s ease-in;
+    }
+    .notActive{
+      transform: translate(100%,0);
+      transition: all 1s ease-in;
+    }
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      .item {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
