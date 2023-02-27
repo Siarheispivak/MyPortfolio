@@ -15,20 +15,29 @@
   text-align: center;
   color: white;
   gap: 30px;
+   max-width: calc(300px + 900px * ((100vw - 320px) / 1600));
 }
 .aboutMe .container h2 {
   font-size: 2.25rem;
   margin: 20px 0 20px 0;
   z-index: 2;
   letter-spacing: 1rem;
+  font-size: calc(20px + 16 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 640px) {
+  .aboutMe .container h2 {
+    padding: 10px;
+    margin: 0;
+  }
 }
 .aboutMe .container .absolute {
+  width: 100%;
   position: absolute;
   top: -10%;
-  left: calc(50% - 342.8571428571px);
   font-size: 8rem;
   color: rgba(255, 255, 255, 0.05);
   z-index: 0;
+  font-size: calc(26px + 102 * ((100vw - 320px) / 1600));
 }
 .aboutMe .container .innerContainer {
   display: flex;
@@ -37,15 +46,36 @@
   justify-content: center;
   color: hsla(0deg, 0%, 100%, 0.5);
 }
+@media (max-width: 640px) {
+  .aboutMe .container .innerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .aboutMe .container .innerContainer .description {
   max-width: 800px;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  max-width: calc(150px + 650 * ((100vw - 320px) / 1600));
+  padding-left: calc(40px + -40 * ((100vw - 320px) / 1600));
+  padding-top: calc(20px + -20 * ((100vw - 320px) / 1600));
+  gap: calc(10px + 20 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 640px) {
+  .aboutMe .container .innerContainer .description {
+    max-width: 75%;
+    padding-left: 0;
+    padding-top: 0;
+  }
 }
 .aboutMe .container .innerContainer .description h3 {
   font-size: 1.75rem;
+  font-size: calc(14px + 14 * ((100vw - 320px) / 1600));
+}
+.aboutMe .container .innerContainer .description p {
+  font-size: calc(8px + 12 * ((100vw - 320px) / 1600));
 }
 .aboutMe .container .innerContainer .personalInfo {
   max-width: 400px;
@@ -53,14 +83,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: calc(100px + 300 * ((100vw - 320px) / 1600));
+  min-width: calc(240px + 160 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 640px) {
+  .aboutMe .container .innerContainer .personalInfo {
+    max-width: 100%;
+  }
 }
 .aboutMe .container .innerContainer .personalInfo .personalInfoInner .ul {
-  width: 300px;
+  min-width: 300px;
   color: white;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: calc(100px + 300 * ((100vw - 320px) / 1600));
+  min-width: calc(240px + 60 * ((100vw - 320px) / 1600));
+  gap: calc(10px + 10 * ((100vw - 320px) / 1600));
 }
 .aboutMe .container .innerContainer .personalInfo .personalInfoInner .ul li {
   width: 100%;

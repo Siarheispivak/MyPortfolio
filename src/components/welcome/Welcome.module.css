@@ -21,13 +21,16 @@
 .welcomeSection .container .mainInfo .info .greeting {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  font-size: calc(14px + 14 * ((100vw - 320px) / 1600));
 }
 .welcomeSection .container .mainInfo .info .text {
   font-weight: 600;
   font-size: 4rem;
+  font-size: calc(20px + 44 * ((100vw - 320px) / 1600));
 }
 .welcomeSection .container .mainInfo .info .address {
   font-size: 1.3125rem;
+  font-size: calc(14px + 14 * ((100vw - 320px) / 1600));
 }
 
 /*# sourceMappingURL=Welcome.module.css.map */

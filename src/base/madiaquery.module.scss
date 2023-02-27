@@ -1,9 +1,9 @@
 @mixin desktop {
-  @media (max-width: 1599px) { @content; }
+  @media (max-width: 1600px) { @content; }
 }
 
 @mixin small-desktop {
-  @media (max-width: 999px) { @content; }
+  @media (max-width: 1000px) { @content; }
 }
 @mixin tablet {
   @media (max-width: 640px) { @content; }

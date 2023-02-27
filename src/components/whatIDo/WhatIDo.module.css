@@ -14,14 +14,23 @@
   font-size: 2.25rem;
   color: white;
   letter-spacing: 1rem;
+  font-size: calc(20px + 16 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 640px) {
+  .whatIDo h2 {
+    padding: 10px;
+    margin: 0;
+  }
 }
 .whatIDo .absolute {
   position: absolute;
   top: 6%;
-  left: calc(50% - 342.8571428571px);
+  width: 100%;
+  text-align: center;
   font-size: 8rem;
   color: rgba(239, 236, 236, 0.15);
   z-index: 0;
+  font-size: calc(26px + 102 * ((100vw - 320px) / 1600));
 }
 .whatIDo .container {
   max-width: 1200px;
@@ -30,6 +39,8 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px 60px;
+  padding-left: calc(20px + -20 * ((100vw - 320px) / 1600));
+  padding-right: calc(20px + -20 * ((100vw - 320px) / 1600));
 }
 
 /*# sourceMappingURL=WhatIDo.module.css.map */

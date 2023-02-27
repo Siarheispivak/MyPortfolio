@@ -14,13 +14,14 @@
   font-size: 32px;
   font-weight: bold;
   color: white;
+   font-size: calc(20px + 12 * ((100vw - 320px) / 1600));
 }
 .header .container {
   max-width: 1200px;
   width: 100%;
   display: flex;
   justify-content: center;
-  max-width: calc(400px + 800 * ((100vw - 320px) / 1600));
+  max-width: calc(300px + 900 * ((100vw - 320px) / 1600));
 }
 .header .networks {
   min-width: 130px;

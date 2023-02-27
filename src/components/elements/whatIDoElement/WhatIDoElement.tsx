@@ -11,7 +11,9 @@ export const WhatIDoElement = (props:WhatIDoElementType) => {
     return (
         <div className={style.WhatIDoElement}>
             <div className={style.imageContainer}>
-                <div className={style.image}><img src={props.src} className={style.pallete} alt="pic"/></div>
+                <div className={style.image}>
+                    <img src={props.src} className={style.pallete} alt="pic"/>
+                </div>
 
             </div>
             <div className={style.description}>

@@ -21,19 +21,19 @@ function App() {
 
     return (
         <div className="App">
-            <div ref={headerRef} className={''}>
-                <Header inView={myElementIsVisible}/>
-            </div>
-            {!myElementIsVisible
-            ?  <div className={`${!myElementIsVisible ? 'sticky' : ''}`}>
-                    <Header inView={myElementIsVisible}/>
-                </div>
-                : ''
-            }
+            {/*<div ref={headerRef} className={''}>*/}
+            {/*    <Header inView={myElementIsVisible}/>*/}
+            {/*</div>*/}
+            {/*{!myElementIsVisible*/}
+            {/*?  <div className={`${!myElementIsVisible ? 'sticky' : ''}`}>*/}
+            {/*        <Header inView={myElementIsVisible}/>*/}
+            {/*    </div>*/}
+            {/*    : ''*/}
+            {/*}*/}
 
-            <Welcome/>
-            <AboutMe/>
-            {/*<WhatIDo/>*/}
+            {/*<Welcome/>*/}
+            {/*<AboutMe/>*/}
+            <WhatIDo/>
             {/*<Resume/>*/}
             {/*<MyWork/>*/}
             {/*<PersonalInfo/>*/}

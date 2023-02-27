@@ -1,4 +1,6 @@
 $container-width: 1200px;
+@import '../../base/mixins.module';
+@import '../../base/madiaquery.module';
 .aboutMe {
   display: flex;
   justify-content: center;
@@ -16,21 +18,33 @@ $container-width: 1200px;
     text-align: center;
     color: white;
     gap: 30px;
+    @include adaptiv-value(' max-width', $container-width, 300, 3);
 
     h2 {
       font-size: 2.25rem;
       margin: 20px 0 20px 0;
       z-index: 2;
       letter-spacing: 1rem;
+      @include adaptiv-value('font-size', 36, 20, 3);
+      @include tablet{
+        padding: 10px;
+        margin: 0;
+      }
     }
 
     .absolute {
+      width: 100%;
       position: absolute;
       top: -10%;
-      left: calc(50% - ($container-width / 3.5));
+      //left: calc(50% - ($container-width / 3.5));
+
       font-size: 8rem;
       color: rgba(255, 255, 255, 0.05);
       z-index: 0;
+      @include adaptiv-value('font-size', 128, 26,3);
+      @include small-desktop {
+        //display: none;
+      }
     }
 
     .innerContainer {
@@ -39,6 +53,11 @@ $container-width: 1200px;
       text-align: start;
       justify-content: center;
       color: hsla(0, 0%, 100%, .5);
+      @include tablet {
+        flex-direction: column;
+        align-items: center;
+
+      }
 
       .description {
         max-width: 800px;
@@ -46,9 +65,23 @@ $container-width: 1200px;
         display: flex;
         flex-direction: column;
         gap: 30px;
+        @include adaptiv-value('max-width', 800, 150, 3);
+        @include adaptiv-value('padding-left', 0, 40, 3);
+        @include adaptiv-value('padding-top', 0, 20, 3);
+        @include adaptiv-value('gap', 30, 10, 3);
+        @include tablet{
+          max-width: 75%;
+          padding-left: 0;
+          padding-top: 0;
+        }
 
         h3 {
           font-size: 1.75rem;
+          @include adaptiv-value('font-size', 28, 14, 3);
+        }
+
+        p {
+          @include adaptiv-value('font-size', 20, 8, 3);
         }
       }
 
@@ -58,16 +91,24 @@ $container-width: 1200px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include adaptiv-value('max-width', 400, 100, 3);
+        @include adaptiv-value('min-width', 400, 240, 3);
+        @include tablet{
+          max-width: 100%;
+        }
 
         .personalInfoInner {
 
           .ul {
-            width: 300px;
+            min-width: 300px;
             color: white;
             padding: 0;
             display: flex;
             flex-direction: column;
             gap: 20px;
+            @include adaptiv-value('max-width', 400, 100, 3);
+            @include adaptiv-value('min-width', 300, 240, 3);
+            @include adaptiv-value('gap', 20, 10, 3);
 
             li {
               width: 100%;

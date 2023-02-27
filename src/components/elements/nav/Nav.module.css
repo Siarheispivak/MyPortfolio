@@ -4,7 +4,7 @@
   max-height: 20px;
   max-width: calc(300px + 300 * ((100vw - 320px) / 1600));
 }
-@media (max-width: 999px) {
+@media (max-width: 1000px) {
   .nav {
     display: none;
   }

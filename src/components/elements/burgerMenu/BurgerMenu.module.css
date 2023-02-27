@@ -6,7 +6,7 @@
   display: none;
   right: calc(160px + 80 * ((100vw - 320px) / 1600));
 }
-@media (max-width: 999px) {
+@media (max-width: 1000px) {
   .burgerMenu {
     display: flex;
   }

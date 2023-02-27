@@ -1,3 +1,6 @@
+@import '../../base/mixins.module';
+@import '../../base/madiaquery.module';
+
 .welcomeSection{
   height: 100vh;
   background: #343233;
@@ -24,13 +27,18 @@
       .greeting{
         font-size: 1.75rem;
         margin-bottom: 1rem;
+        @include adaptiv-value('font-size', 28, 14,3);
+
       }
       .text{
         font-weight: 600;
         font-size: 4rem;
+        //font-size: 48px;
+        @include adaptiv-value('font-size', 64, 20,3);
       }
       .address{
-        font-size: 1.3125rem
+        font-size: 1.3125rem;
+        @include adaptiv-value('font-size', 28, 14,3);
       }
     }
 
