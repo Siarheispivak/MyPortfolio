@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 90px;
+  gap: 30px;
   padding-left: calc(10px + 80 * ((100vw - 320px) / 1600));
   padding-right: calc(10px + 80 * ((100vw - 320px) / 1600));
 }

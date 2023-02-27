@@ -13,6 +13,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 90px;
+  gap: 30px;
 
     @include adaptiv-value('padding-left', 90, 10,3);
     @include adaptiv-value('padding-right', 90, 10,3);

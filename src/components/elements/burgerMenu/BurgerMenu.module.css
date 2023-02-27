@@ -1,7 +1,6 @@
 .burgerMenu {
   height: 50px;
   background: transparent;
-  position: fixed;
   z-index: 11;
   align-items: center;
   display: none;

@@ -1,10 +1,12 @@
+@import '../../../base/mixins.module';
+@import '../../../base/madiaquery.module';
 .menu {
   position: fixed;
   right: 0;
   width: 100vw;
   height: 100vh;
   top: 80px;
-  transform: translate(-130%);
+  transform: translate(-140%);
   transition: 1s;
   &.active {
   transform: translate(0);
@@ -16,13 +18,15 @@
     position: absolute;
 
     .menuContent {
-      width: 30%;
+      max-width: 400px;
+      width: 100%;
       height: 100%;
       background-color: #000;
       display: flex;
       flex-direction: column;
       align-items: center;
       transition: 1s;
+        @include adaptiv-value('max-width',400,600,3);
 
       .menuHeader {
         padding: 10px;

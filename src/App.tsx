@@ -31,8 +31,8 @@ function App() {
                 : ''
             }
 
-            {/*<Welcome/>*/}
-            {/*<AboutMe/>*/}
+            <Welcome/>
+            <AboutMe/>
             {/*<WhatIDo/>*/}
             {/*<Resume/>*/}
             {/*<MyWork/>*/}
