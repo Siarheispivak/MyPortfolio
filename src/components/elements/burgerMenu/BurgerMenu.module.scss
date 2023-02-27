@@ -1,0 +1,50 @@
+@import '../../../base/mixins.module';
+@import '../../../base/madiaquery.module';
+.burgerMenu {
+  height: 50px;
+  background: transparent;
+  position: fixed;
+  //right: 200px;
+  z-index: 11;
+  align-items: center;
+  display: none;
+  @include adaptiv-value('right',240,160,3);
+  @include small-desktop{
+    display: flex;
+  }
+}
+
+.burgerBtn {
+  width: 20px;
+  height: 16px;
+  //margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.burgerBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  background-color: white;
+  height: 2px;
+}
+
+.burgerBtn span {
+  position: absolute;
+  top: calc(50% - 1px);
+  width: 20px;
+  background-color: white;
+  height: 2px;
+}
+
+.burgerBtn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  background-color: white;
+  height: 2px;
+}

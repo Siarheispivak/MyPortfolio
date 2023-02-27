@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   height: 80px;
   background: black;
   display: flex;

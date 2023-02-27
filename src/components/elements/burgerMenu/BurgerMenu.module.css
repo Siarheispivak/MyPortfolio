@@ -1,0 +1,50 @@
+.burgerMenu {
+  height: 50px;
+  background: transparent;
+  position: fixed;
+  z-index: 11;
+  align-items: center;
+  display: none;
+  right: calc(160px + 80 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 999px) {
+  .burgerMenu {
+    display: flex;
+  }
+}
+
+.burgerBtn {
+  width: 20px;
+  height: 16px;
+  position: relative;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.burgerBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20px;
+  background-color: white;
+  height: 2px;
+}
+
+.burgerBtn span {
+  position: absolute;
+  top: calc(50% - 1px);
+  width: 20px;
+  background-color: white;
+  height: 2px;
+}
+
+.burgerBtn:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  background-color: white;
+  height: 2px;
+}
+
+/*# sourceMappingURL=BurgerMenu.module.css.map */

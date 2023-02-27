@@ -1,0 +1,50 @@
+.menu {
+  position: fixed;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 80px;
+  transform: translate(-130%);
+  transition: 1s;
+  &.active {
+  transform: translate(0);
+}
+  .blur {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    position: absolute;
+
+    .menuContent {
+      width: 30%;
+      height: 100%;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: 1s;
+
+      .menuHeader {
+        padding: 10px;
+        font-size: 2rem;
+        color: #20c997;
+        border-bottom: 1px solid #20c997;
+        width: 100%;
+        text-align: center;
+      }
+      ul {
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-size:26px;
+        a{
+          &:hover{
+            color: #20c997;
+          }
+        }
+      }
+    }
+  }
+}

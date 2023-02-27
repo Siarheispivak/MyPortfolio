@@ -9,6 +9,8 @@ import {MyWork} from "./components/myWork/MyWork";
 import {PersonalInfo} from "./components/personalInfo/personalInfo";
 import {Footer} from "./components/footer/Footer";
 import {useInView} from "react-intersection-observer";
+import {BurgerMenu} from "./components/elements/burgerMenu/BurgerMenu";
+import {Menu} from "./components/elements/menu/Menu";
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
                 </div>
                 : ''
             }
+
             {/*<Welcome/>*/}
             {/*<AboutMe/>*/}
             {/*<WhatIDo/>*/}
