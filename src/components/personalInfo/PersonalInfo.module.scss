@@ -1,3 +1,11 @@
+@import '../../base/mixins.module';
+@import '../../base/madiaquery.module';
+
+//@include adaptiv-value('font-size', 36, 20, 3);
+//@include tablet{
+//  padding: 10px;
+//  margin: 0;
+//}
 .personalInfo {
   height: fit-content;
   background-color: #343a40;
@@ -20,27 +28,40 @@
     height: inherit;
     display: flex;
     justify-content: space-between;
+    @include adaptiv-value('max-width', 1200, 800,4);
+    @include adaptiv-value('padding-left', 0, 40,3);
+    @include adaptiv-value('padding-right', 0, 40,3);
+    @include adaptiv-value('gap', 0, 60,3);
+    @include small-desktop{
+      flex-direction: column;
+      align-items: center;
+    }
 
     .info {
       max-width: 230px;
+      min-width: 230px;
       width: 100%;
       padding: 0px 12px;
       color: #dee3e4;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 50px;
+
 
       .contacts {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
+
         .address {
           font-size: 1.3125rem;
         }
-        .city{
+
+        .city {
           position: relative;
           text-align: end;
-          &:before{
+
+          &:before {
             content: '';
             background-image: url('../../assets/location.png');
             width: 20px;
@@ -58,10 +79,12 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        .phone{
+
+        .phone {
           position: relative;
           text-align: end;
-          &:before{
+
+          &:before {
             content: '';
             background-image: url('../../assets/chats.png');
             width: 50px;
@@ -73,10 +96,12 @@
             cursor: pointer;
           }
         }
-        .email{
+
+        .email {
           position: relative;
           text-align: end;
-          &:before{
+
+          &:before {
             content: '';
             background-image: url('../../assets/email.png');
             width: 30px;
@@ -94,17 +119,23 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        .followTitle{
+
+        @include small-desktop{
+          align-items: center;
+        }
+        .followTitle {
 
         }
-        .networks{
+
+        .networks {
           display: flex;
           align-items: center;
-          gap:20px;
-          .pic{
+          gap: 20px;
+
+          .pic {
             max-width: 30px;
 
-            &:hover{
+            &:hover {
               scale: 1.2;
               transition: 0.5s;
             }
@@ -114,39 +145,69 @@
       }
     }
 
-    .note{
+    .note {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
-      .noteTitle{
+      width: 100%;
+      @include small-desktop{
+        order: -1;
+        min-width: 290px;
+        padding: 10px;
+      }
+
+      .noteTitle {
         font-size: 1.3125rem;
         text-align: left;
         color: white;
       }
-      .gridContainer{
-        display: grid;
-        grid-template-columns: 400px 400px;
-        grid-template-rows: 50px 120px;
-        grid-template-areas: "a b ." "c c c";
-        gap: 20px 0px;
-        .gridInner{
+
+      .flexContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        width: 100%;
+        label {
+          line-height: 2;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
+          margin-top: 0;
+          color: white;
+          font-size: 16px;
+          font-weight: 200;
+          width: 100%;
+
+        }
+        .firstRow {
+          display: flex;
+          flex-direction: column;
+
+        }
+
+
+        .flexInner {
           border-radius: 5px;
           padding: 0.81rem 0.96rem;
           background: #232a31;
           border-color: #232a31;
           color: white;
         }
-        .name{
-          grid-area: a;
-          margin-right: 10px;
+
+        .name {
+
+
         }
-        .email{
-          grid-area: b;
-          margin-left: 10px;
+
+        .email {
+
+
         }
-        .description{
-          grid-area: c;
+
+        .description {
+          min-height: 140px;
         }
       }
     }

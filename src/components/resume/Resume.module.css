@@ -4,6 +4,7 @@
   background-color: #212529;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 100px;
   padding: 7rem 0 4.5rem 0;
@@ -13,31 +14,52 @@
   color: white;
   letter-spacing: 1rem;
   z-index: 2;
+  font-size: calc(20px + 16 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 640px) {
+  .resume .mainTitle {
+    padding: 10px;
+    margin: 0;
+  }
 }
 .resume .absolute {
   position: absolute;
   top: 3.5%;
-  left: calc(50% - 342.8571428571px);
   font-size: 8rem;
-  color: rgba(75, 74, 73, 0.25);
   z-index: 0;
   letter-spacing: 1rem;
   color: rgba(108, 117, 125, 0.16);
+  font-size: calc(26px + 102 * ((100vw - 320px) / 1600));
 }
 .resume .skills {
   color: white;
 }
 .resume .container {
-  max-width: 1200px;
   width: 100%;
   display: flex;
   text-align: center;
   height: inherit;
   justify-content: center;
   align-self: center;
+  max-width: calc(300px + 900 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 1000px) {
+  .resume .container {
+    flex-direction: column;
+  }
 }
 .resume .container .education {
   padding: 0px 24px;
+}
+@media (max-width: 1000px) {
+  .resume .container .education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    gap: 10px;
+  }
 }
 .resume .container .education .title {
   font-size: 1.5rem;
@@ -48,6 +70,16 @@
 }
 .resume .container .experience {
   padding: 0px 24px;
+}
+@media (max-width: 1000px) {
+  .resume .container .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    gap: 10px;
+  }
 }
 .resume .container .experience .title {
   font-size: 1.5rem;
@@ -74,6 +106,12 @@
   display: flex;
   justify-content: center;
   gap: 52px;
+  max-width: calc(300px + 900 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 1000px) {
+  .resume .secondContainer {
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=Resume.module.css.map */

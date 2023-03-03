@@ -1,11 +1,13 @@
-$container-width:1200px;
+$container-width: 1200px;
+@import '../../base/mixins.module';
+@import '../../base/madiaquery.module';
 .resume {
   position: relative;
   height: fit-content;
   background-color: #212529;
   display: flex;
   justify-content: center;
-  //align-items: center;
+  align-items: center;
   flex-direction: column;
   gap: 100px;
   padding:  7rem 0 4.5rem 0;
@@ -14,32 +16,48 @@ $container-width:1200px;
     color: white;
     letter-spacing: 1rem;
     z-index: 2;
+    @include adaptiv-value('font-size', 36, 20, 3);
+    @include tablet{
+      padding: 10px;
+      margin: 0;
+    }
   }
   .absolute {
     position: absolute;
     top: 3.5%;
-    left: calc(50% - ($container-width / 3.5));
     font-size: 8rem;
-    color: rgba(75, 74, 73, 0.25);
     z-index: 0;
     letter-spacing: 1rem;
-    color: rgba(108, 117, 125, 0.16)
+    color: rgba(108, 117, 125, 0.16);
+    @include adaptiv-value('font-size', 128, 26,3);
   }
   .skills{
     color: white;
   }
   .container {
-    max-width: $container-width;
+    //max-width: $container-width;
     width: 100%;
     display: flex;
     text-align: center;
     height: inherit;
     justify-content: center;
     align-self: center;
+    @include adaptiv-value('max-width', 1200, 300,3);
+    @include small-desktop{
+      flex-direction: column;
+    }
 
 
     .education {
       padding: 0px 24px;
+      @include small-desktop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+        gap: 10px;
+      }
 
       .title {
         font-size: 1.5rem;
@@ -51,6 +69,14 @@ $container-width:1200px;
     }
 
     .experience {
+      @include small-desktop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+        gap: 10px;
+      }
       .title {
         font-size: 1.5rem;
         font-weight: 600;
@@ -68,6 +94,10 @@ $container-width:1200px;
       display: flex;
       flex-direction: column;
       gap: 20px;
+      //@include adaptiv-value('max-width', 600,300,3);
+
+
+
     }
 
     .skillBox2 {
@@ -83,5 +113,9 @@ $container-width:1200px;
     display: flex;
     justify-content: center;
     gap: 52px;
+    @include adaptiv-value('max-width', 1200, 300,3);
+    @include small-desktop{
+      padding: 10px;
+    }
   }
 }

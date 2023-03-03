@@ -16,7 +16,8 @@ export const Resume = () => {
                     <ResumeElement years={'2014-2019'} specialization={'English Teacher'} company={'Minsk State Linguistic University'} description={'Faculty of English'}/>
                     <ResumeElement years={'15 September 2020'} specialization={'TEFL/TESOL'} company={'Global Language Training'} description={'MASTER TEFL/TESOL COURSE'}/>
                     <ResumeElement years={'2021'} specialization={'Front-end'} company={'BELHARD'} description={'Modern Front-End using JavaScript and HTML5'}/>
-                    <ResumeElement years={'????'} specialization={'************'} company={'********'} description={'Coming Soon...'}/>
+                    <ResumeElement years={'04 September 2022'} specialization={'Front-end'} company={'THE ROLLING SCOPES SCHOOL'} description={'JS/FE PRE-SCHOOL 2022Q2(JAVASCRIPT'}/>
+                    <ResumeElement years={'2023'} specialization={'React/Front-End'} company={'IT-INCUBATOR'} description={'Coming Soon...'}/>
 
 
                 </div>

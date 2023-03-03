@@ -40,7 +40,7 @@
   flex-wrap: wrap;
   gap: 20px 60px;
   padding-left: calc(20px + -20 * ((100vw - 320px) / 1600));
-  padding-right: calc(20px + -20 * ((100vw - 320px) / 1600));
+  padding-right: calc(10px + -10 * ((100vw - 320px) / 1600));
 }
 
 /*# sourceMappingURL=WhatIDo.module.css.map */

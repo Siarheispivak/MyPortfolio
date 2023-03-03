@@ -16,47 +16,30 @@
   max-width: 1200px;
   width: 100%;
   height: inherit;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 200px 200px 200px;
-  grid-template-areas: "a b c" "d b e" "d f g" ". f .";
-  grid-gap: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  max-width: calc(300px + 900 * ((100vw - 320px) / 1600));
 }
-.myWork .container .box1 {
-  background: #ffcd00;
-  grid-area: a;
-}
-.myWork .container .box2 {
-  background: #00e100;
-  grid-area: b;
-}
-.myWork .container .box3 {
-  background: #0238ff;
-  grid-area: c;
-}
-.myWork .container .box4 {
-  background: #ff0000;
-  grid-area: d;
-}
-.myWork .container .box5 {
-  background: #a625b0;
-  grid-area: e;
-}
-.myWork .container .box6 {
-  background: rgb(0, 119, 255);
-  grid-area: f;
-}
-.myWork .container .box7 {
-  background: #e0b0b0;
-  grid-area: g;
+@media (max-width: 1000px) {
+  .myWork .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
 .myWork .container .box {
+  max-width: 350px;
+  width: 100%;
+  min-height: 350px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(32, 201, 151, 0.45);
   opacity: 0.4;
+  max-width: calc(200px + 150 * ((100vw - 320px) / 1600));
+  min-height: calc(200px + 100 * ((100vw - 320px) / 1600));
 }
 .myWork .container .box:hover {
   transform: scale(1.1);
@@ -66,6 +49,15 @@
   filter: brightness(0.7);
   z-index: 1;
   cursor: pointer;
+}
+.myWork .container .box1 {
+  background: #ffcd00;
+}
+.myWork .container .box2 {
+  background: #00e100;
+}
+.myWork .container .box3 {
+  background: #0238ff;
 }
 
 /*# sourceMappingURL=MyWork.module.css.map */
