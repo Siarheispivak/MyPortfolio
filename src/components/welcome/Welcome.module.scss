@@ -1,60 +1,67 @@
 @import '../../base/mixins.module';
 @import '../../base/madiaquery.module';
 
-.welcomeSection{
+.welcomeSection {
+  position: relative;
   height: 100vh;
   background: #343233;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 5;
+  }
 
-  .container{
+  .container {
     max-width: 1200px;
     width: 100%;
     display: flex;
     justify-content: center;
 
 
-    .mainInfo{
+    .mainInfo {
       color: #dee3e4;
       text-align: center;
       display: flex;
       flex-direction: column;
       gap: 40px;
-    .info{
 
-      .greeting{
-        font-size: 1.75rem;
-        margin-bottom: 1rem;
-        @include adaptiv-value('font-size', 28, 14,3);
+      .info {
+        z-index: 6;
 
+        .greeting {
+          font-size: 1.75rem;
+          margin-bottom: 1rem;
+          @include adaptiv-value('font-size', 28, 14, 3);
+
+        }
+
+        .text {
+          font-weight: 600;
+          font-size: 4rem;
+          //font-size: 48px;
+          @include adaptiv-value('font-size', 64, 20, 3);
+        }
+
+        .address {
+          font-size: 1.3125rem;
+          @include adaptiv-value('font-size', 28, 14, 3);
+        }
       }
-      .text{
-        font-weight: 600;
-        font-size: 4rem;
-        //font-size: 48px;
-        @include adaptiv-value('font-size', 64, 20,3);
-      }
-      .address{
-        font-size: 1.3125rem;
-        @include adaptiv-value('font-size', 28, 14,3);
-      }
-    }
 
 
     }
   }
 
 }
-
-
-
-
-
-
-
-
 
 
 //

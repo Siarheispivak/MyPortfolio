@@ -1,0 +1,11 @@
+@import '../../base/mixins.module';
+@import '../../base/madiaquery.module';
+
+
+.videoBgContainer{
+  position: absolute;
+  height: inherit;
+  .videoBg{
+    z-index: 3;
+  }
+}

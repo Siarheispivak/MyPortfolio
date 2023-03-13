@@ -4,6 +4,7 @@ import style from './Menu.module.css'
 type ItemsType = {
     value:string
     href:string
+    id:number
 }
 type MenuType = {
     active:boolean
@@ -13,7 +14,7 @@ type MenuType = {
 }
 
 export  const Menu = (props: MenuType) => {
-    console.log(props.items)
+
     return (
         <div className={props.active ? `${style.menu} ${style.active}`: style.menu} onClick={()=>props.setActive(false)}>
             <div className={style.blur}>
@@ -21,7 +22,7 @@ export  const Menu = (props: MenuType) => {
                     <div className={style.menuHeader}>{props.header}</div>
                     <ul>
                         {props.items.map(el=>
-                            <li>
+                            <li key={el.id}>
                                 <a href={el.href}>{el.value}</a>
                             </li>
                         )}

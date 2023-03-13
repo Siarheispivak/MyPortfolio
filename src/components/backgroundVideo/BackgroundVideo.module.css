@@ -1,0 +1,9 @@
+.videoBgContainer {
+  position: absolute;
+  height: inherit;
+}
+.videoBgContainer .videoBg {
+  z-index: 3;
+}
+
+/*# sourceMappingURL=BackgroundVideo.module.css.map */
